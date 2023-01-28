@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codeslices | Practice your coding skills</title>
+
+    <!-- tailwindcss & aos -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Box icons -->
+    <script src="js/boxicons.js"></script>
+
+    <!-- script -->
+    <script src="js/aos.js"></script>
+    <script src="js/script.js" defer></script>
+    
+  </head>
+  <body class="-z-10 w-full bg-basic font-noto text-white">
+    <!-- ================= Navbar start ================= -->
+    <nav class="container relative z-40 mx-auto flex w-full items-center justify-between py-8 px-4 lg:px-40">
+      <div class="logo">
+        <a href="#" class="font-dm text-2xl font-bold">{ Codeslices }</a>
+      </div>
+
+      <div id="toggler" class="px-3 py-3 bg-white/5 items-center flex rounded-normal cursor-pointer hover:bg-white/10 sm:hidden relative" onclick="showMenu()" />
+        <box-icon name='menu' color="#fff" ></box-icon>
+      </div>
+
+      <ul id="navbar-menu" class="hidden absolute sm:relative z-50 sm:z-0 backdrop-blur-3xl h-screen sm:h-auto top-28 sm:top-0 right-0 left-0 transition-all duration-300 md:transition-none sm:space-x-4 text-sm font-medium sm:flex">
+        <li><a href="index.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 bg-white/10 hover:text-white">Home</a></li>
+        <li><a href="design.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 hover:bg-white/10 hover:text-white">Design Collections</a></li>
+        <li><a href="about.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 hover:bg-white/10 hover:text-white">About Us</a></li>
+        <a href="contact.html" class="block text-center md:rounded-normal bg-indigo-700 px-7 py-[10px] font-medium hover:bg-indigo-800 sm:hidden mt-6">Contact Us</a>
+      </ul>
+      <a href="contact.html" class="hidden rounded-normal bg-indigo-700 px-7 py-[10px] font-medium hover:bg-indigo-800 sm:block">Contact Us</a>
+    </nav>
+    <!-- =================  Navbar end  ================= -->
+
+    <main class="hero w-full antialiased">
+      <!-- ================= Section Hero Start ================= -->
+      <section class="container relative z-20 mx-auto mt-20 flex h-auto max-w-3xl flex-col items-center px-6 text-center md:px-0">
+        <h1 data-aos="fade-up" data-aos-duration="1000" class="mb-4 text-xl font-bold md:mb-6 md:text-4xl md:leading-[57px]">Enhance Your Coding Skills By Implement Real World Design</h1>
+        <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="mb-6 text-white/60 md:mb-10 md:leading-[32px]">
+          Learn to Convert Professional Designs into Fully Functional Websites <br class="hidden md:block" />
+          With Our Services
+        </p>
+        <button data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" class="cursor-pointer rounded-normal bg-indigo-700 px-6 py-3 hover:bg-indigo-800 md:px-14 md:py-4 md:text-lg md:font-semibold">Join The Challenge</button>
+
+        <div class="cards mt-20 flex flex-col justify-center gap-4 lg:flex-row">
+          <div data-aos="fade-left" data-aos-duration="1000" class="h-[276px] w-full select-none rounded-normal bg-white/5 py-[34px] px-[37px] duration-300 hover:bg-white/10 lg:w-[333px]">
+            <div class="flex h-[50px] w-[50px] items-center justify-center rounded-[3px] bg-white/10">
+              <img src="assets/svg/figma.svg" alt="Figma Icon" />
+            </div>
+            <h3 class="mt-6 text-left text-lg font-bold">Free Design</h3>
+            <p class="spacing mt-2 text-left font-medium leading-8 tracking-[5%] text-white/60">We have free downloadable Figma Designs on Figma Community.</p>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="h-[276px] w-full select-none rounded-normal bg-white/5 py-[34px] px-[37px] duration-300 hover:bg-white/10 lg:w-[333px]">
+            <div class="flex h-[50px] w-[50px] items-center justify-center rounded-[3px] bg-white/10">
+              <img src="assets/svg/Chat Icon.svg" alt="Chat icon" />
+            </div>
+            <h3 class="mt-6 text-left text-lg font-bold">Code Reviewer</h3>
+            <p class="spacing mt-2 text-left font-medium leading-8 tracking-[5%] text-white/60">Get feedback and suggestions for your project by sending email via our contact page.</p>
+          </div>
+          <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" class="h-[276px] w-full select-none rounded-normal bg-white/5 py-[34px] px-[37px] duration-300 hover:bg-white/10 lg:w-[333px]">
+            <div class="flex h-[50px] w-[50px] items-center justify-center rounded-[3px] bg-white/10">
+              <img src="assets/svg/Brief Icon.svg" alt="Project Icon" />
+            </div>
+            <h3 class="mt-6 text-left text-lg font-bold">Project Briefing</h3>
+            <p class="spacing mt-2 text-left font-medium leading-8 tracking-[5%] text-white/60">Get expert guidance for your project with our briefing service.</p>
+          </div>
+        </div>
+      </section>
+      <!-- =================  Section Hero End  ================= -->
+
+      <!-- ================= Section Collection Start ================= -->
+      <section id="collection" class="container mx-auto mt-28 justify-center">
+        <div class="mx-auto flex max-w-3xl flex-col text-center">
+          <p data-aos="fade-up" data-aos-duration="1000" class="mb-2 text-lg font-semibold leading-8 text-greend">OUR TOP COLLECTION</p>
+          <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" class="px-8 text-xl font-bold md:px-0 md:text-3xl md:font-bold md:leading-[48px]">Free Figma designs for coding practice. Download now and improve your slicing skill</h2>
+        </div>
+
+        <!-- 1 -->
+        <div class="mx-auto mt-20 flex w-full flex-col items-center md:max-w-5xl md:flex-row">
+          <div data-aos="fade-left" data-aos-duration="1000" class="relative h-full w-full max-w-xs after:absolute after:top-0 after:left-0 after:z-40 after:h-full after:w-[120%] after:bg-[#7DD3FC] after:opacity-[15%] after:blur-2xl md:w-7/12 lg:w-6/12">
+            <img src="assets/img/Card Design 1.png" alt="Design 1" class="object-cover" />
+          </div>
+          <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="mt-7 px-7 md:mt-0 md:w-full">
+            <h2 class="text-2xl font-bold leading-9 tracking-wide">Codeslices</h2>
+            <h3 class="mt-2 text-xl font-semibold text-white/70">Level : Intermediate</h3>
+            <p class="mt-3 text-lg leading-8 text-white/60">
+              Codeslices is the ultimate destination for developers looking to perfect their craft. Our platform offers a comprehensive and challenging environment for honing your slicing skills, turning design into code with precision and efficiency. Whether you're a beginner or an experienced developer.
+            </p>
+            <button>
+              <a href="pages.html" class="mt-4 flex items-center rounded-normal bg-white/5 py-3 px-8 text-center hover:bg-white/10">
+                <img src="assets/svg/Download.svg" alt="Download Icon" class="mr-4" />
+                Download
+              </a>
+            </button>
+          </div>
+        </div>
+        <!-- 1 -->
+        <!-- 2 -->
+        <div class="mx-auto mt-32 flex w-full flex-col items-center md:max-w-5xl md:flex-row-reverse">
+          <div data-aos="fade-right" data-aos-duration="1000" class="relative h-full w-full max-w-xs after:absolute after:top-0 after:left-0 after:z-40 after:h-full after:w-full after:bg-[#EF4444] after:opacity-[15%] after:blur-2xl md:w-7/12 lg:w-6/12">
+            <img src="assets/img/Card Design 2.png" alt="Design 1" class="object-cover" />
+          </div>
+          <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000" class="mt-7 px-7 md:mt-0 md:w-full">
+            <h2 class="text-2xl font-bold leading-9 tracking-wide">Nextklix</h2>
+            <h3 class="mt-2 text-xl font-semibold text-white/70">Level : Easy</h3>
+            <p class="mt-3 text-lg leading-8 text-white/60">
+              We offer a wide selection of movies from all genres, from the latest to the classics. Our intuitive search helps you find your favorite movies. We're constantly adding new movies for you.
+            </p>
+            <button class="button mt-4 flex items-center rounded-normal bg-white/5 py-3 px-8 text-center hover:bg-white/10">
+              <img src="assets/svg/Download.svg" alt="Download Icon" class="mr-4" />
+              Download
+            </button>
+          </div>
+        </div>
+        <!-- 2 -->
+        <!-- 3 -->
+        <div class="mx-auto mt-32 flex w-full flex-col items-center md:max-w-5xl md:flex-row">
+          <div data-aos="fade-left" data-aos-duration="1000" class="relative h-full w-full max-w-xs after:absolute after:top-0 after:left-0 after:z-40 after:h-full after:w-[120%] after:bg-[#7DD3FC] after:opacity-[15%] after:blur-2xl md:w-7/12 lg:w-6/12">
+            <img src="assets/img/Card Design 3.png" alt="Design 1" class="object-cover" />
+          </div>
+          <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="mt-7 px-7 md:mt-0 md:w-full">
+            <h2 class="text-2xl font-bold leading-9 tracking-wide">Wisatist</h2>
+            <h3 class="mt-2 text-xl font-semibold text-white/70">Level : Intermediate</h3>
+            <p class="mt-3 text-lg leading-8 text-white/60">
+              We are a company that makes and distributes video games. They stand out because they are expensive and available in online stores. Our target audience is couples. We want to convey a sense of security, while at the same time
+              being kind.
+            </p>
+            <button class="button mt-4 flex items-center rounded-normal bg-white/5 py-3 px-8 text-center hover:bg-white/10">
+              <img src="assets/svg/Download.svg" alt="Download Icon" class="mr-4" />
+              Download
+            </button>
+          </div>
+        </div>
+        <!-- 3 -->
+        <!-- ================ Footer Start ================ -->
+        <footer id="footer" class="container mx-auto mt-20 max-w-5xl px-2 pb-8 text-center md:text-left">
+          <!-- contact -->
+          <div class="flex w-full flex-col items-center gap-4 border-y-2 border-white/10 py-8 px-2 lg:flex-row lg:justify-between">
+            <h1 class="w-full text-center text-base font-semibold md:text-3xl md:font-bold lg:max-w-lg lg:text-start">Want to talk with us? Click the button.</h1>
+            <div class="mt-2 flex w-full justify-center gap-4 md:justify-start lg:w-auto">
+              <button class="flex-auto rounded-[3px] bg-indigo-700 px-3 py-3 text-sm hover:bg-indigo-800 md:px-6 md:py-3 md:text-lg md:font-bold md:tracking-wide lg:flex-none">See More Design</button>
+              <button class="flex-auto rounded-[3px] bg-white/10 px-3 py-3 text-sm hover:bg-white/5 md:px-6 md:py-3 md:text-lg md:font-bold md:tracking-wide lg:flex-none">Send a Request</button>
+            </div>
+
+            
+          </div>
+
+          <!-- cpr -->
+        </footer>
+        <!-- cpr -->
+        <div class="container text-center md:text-left mx-auto max-w-5xl pb-10 flex justify-center flex-col md:flex-row mt-4 md:justify-between md:items-center">
+          <p class="text-sm sm:text-base md:text-md">&copy; 2023. Lifznotes All rights reserved.</p>
+          <div class="icons flex mx-auto md:mx-0 mt-4 mb-3 md:mt-0 gap-2">
+            <img src="assets/svg/twitter-icon.svg" alt="twitter icon" >
+            <img src="assets/svg/yt-icon.svg" alt="youtube icon" >
+            <img src="assets/svg/fb-icon.svg" alt="facebook icon" >
+            <img src="assets/svg/discord-icon.svg" alt="discord icon" >
+          </div>
+        </div>
+      </section>
+      <!-- =================  Section Collection End  ================= -->
+    </main>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  /* custom scrollbar */
+  ::-webkit-scrollbar-track {
+    border: 1px solid black;
+    background-color: #000;
+  }
+
+  ::-webkit-scrollbar { 
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(55, 48, 163), rgb(67, 56, 202));
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-image: url("../assets/svg/grid.svg"), url("../assets/img/gradient-green.png"), url("../assets/img/gradient-red.png");
+    background-position: center, top left, center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  body {
+    background: url("../assets/img/gradient-red.png") no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Box icons -->
+    <script src="js/boxicons.js"></script>
+
+    <!-- script -->
+    <script src="js/aos.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="w-full bg-basic font-noto text-white">
+    <!-- Navbar Start -->
+    <nav class="container relative z-40 mx-auto flex w-full items-center justify-between py-8 px-4 lg:px-40">
+        <div class="logo">
+          <a href="#" class="font-dm text-2xl font-bold">{ Codeslices }</a>
+        </div>
+  
+        <div id="toggler" class="px-3 py-3 bg-white/5 items-center flex rounded-normal cursor-pointer hover:bg-white/10 sm:hidden relative" onclick="showMenu()" />
+          <box-icon name='menu' color="#fff" ></box-icon>
+        </div>
+  
+        <ul id="navbar-menu" class="hidden absolute sm:relative z-50 sm:z-0 backdrop-blur-3xl h-screen sm:h-auto top-28 sm:top-0 right-0 left-0 transition-all duration-300 md:transition-none sm:space-x-4 text-sm font-medium sm:flex">
+          <li><a href="index.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 bg-white/10 hover:text-white">Home</a></li>
+          <li><a href="design.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 hover:bg-white/10 hover:text-white">Design Collections</a></li>
+          <li><a href="about.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 hover:bg-white/10 hover:text-white">About Us</a></li>
+          <a href="contact.html" class="block text-center md:rounded-normal bg-indigo-700 px-7 py-[10px] font-medium hover:bg-indigo-800 sm:hidden mt-6">Contact Us</a>
+        </ul>
+        <a href="contact.html" class="hidden rounded-normal bg-indigo-700 px-7 py-[10px] font-medium hover:bg-indigo-800 sm:block">Contact Us</a>
+      </nav>
+      <!-- Navbar Ends -->
+
+      <!-- ===================================== -->
+      <main class="hero w-full antialiased -z-20 pb-10">
+        <div class="grid grid-cols-1 w-full md:max-w-5xl md:grid-cols-2 mx-auto mt-10 md:mt-20 px-6 md:px-8">
+
+        <div class="contact-description mb-16 md:mb-0 w-full md:max-w-xl md:mt-12">
+            <p data-aos="fade-left" data-aos-duration="1500" class="text-lg font-semibold leading-8 text-center md:text-left text-greend mb-3">CONTACT US</p>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="mb-2 text-center md:text-left text-lg font-bold md:mb-4 md:text-4xl md:leading-[57px]">
+                Don’t let any question go unanswered, reach out to us today
+            </h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="text-center md:text-left font-medium text-sm text-white/60">
+                We're excited to hear about your next project! Reach out to us via our contact form to request a custom design or get feedback on your latest work.
+            </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="contact-form w-full mx-auto md:ml-auto lg:ml-24 md:w-[422px] bg-white/10 px-10 pt-12 pb-8 rounded-normal shadow-xl backdrop-blur-xl">
+            <form action="" class="font-medium w-full text-white/60">
+           
+            <div class="bio grid grid-cols-2 w-full gap-3">
+                    <div class="flex flex-col">
+                        <label for="name" class="mb-2">Name</label>
+                        <input type="text" id="name" class="bg-transparent border-2 border-white/10 focus:border-white/70 focus:outline-none px-2 py-2">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="mb-2">Email</label>
+                        <input type="text" id="email" class="bg-transparent focus:outline-none px-2 py-2 focus:border-white/70 border-2 border-white/10 ">
+                    </div>
+                </div>
+
+                <div class="subject flex flex-col mt-6">
+                    <label for="subject" class="mb-2">Subject</label>
+                    <input type="text" id="subject" class="bg-transparent border-2 border-white/10 focus:border-white/70 focus:outline-none px-2 py-2" >
+                </div>
+
+                <div class="message flex flex-col mt-6">
+                    <label for="message" class="mb-2">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="bg-transparent rounded-md border-2 border-white/60 focus:border-white/70 focus:outline-none px-2 py-2" style="resize: none;"></textarea>
+                </div>
+
+                <button class="mt-10 w-full bg-indigo-700 rounded-sm py-3 px-6">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
+      </main>
+
+      <footer id="footer" class="container mx-auto mt-10 max-w-5xl px-4 pb-8 text-center md:text-left border-t border-t-white/30">
+        <div class="flex justify-center flex-col md:flex-row mt-4 md:justify-between md:items-center">
+            <p class="text-sm sm:text-base md:text-md">&copy; 2023. Lifznotes All rights reserved.</p>
+            <div class="icons flex mx-auto md:mx-0 mt-4 mb-3 md:mt-0 gap-2">
+            <img src="assets/svg/twitter-icon.svg" alt="twitter icon" >
+            <img src="assets/svg/yt-icon.svg" alt="youtube icon" >
+            <img src="assets/svg/fb-icon.svg" alt="facebook icon" >
+            <img src="assets/svg/discord-icon.svg" alt="discord icon" >
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

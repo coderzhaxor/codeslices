@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design View</title>
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/pages.css">
+    <script src="js/script.js" defer></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Box icons -->
+    <script src="js/boxicons.js"></script>
+
+</head>
+<body class="-z-10 w-full bg-basic font-noto text-white">
+    <!-- ================= Navbar start ================= -->
+    <nav class="container relative z-40 mx-auto flex w-full items-center justify-between py-8 px-4 lg:px-40">
+      <div class="logo">
+        <a href="#" class="font-dm text-2xl font-bold">{ Codeslices }</a>
+      </div>
+
+      <div id="toggler" class="px-3 py-3 bg-white/5 items-center flex rounded-normal cursor-pointer hover:bg-white/10 sm:hidden relative" onclick="showMenu()" />
+        <box-icon name='menu' color="#fff" ></box-icon>
+      </div>
+
+      <ul id="navbar-menu" class="hidden absolute sm:relative z-50 sm:z-0 backdrop-blur-3xl h-screen sm:h-auto top-28 sm:top-0 right-0 left-0 transition-all duration-300 md:transition-none sm:space-x-4 text-sm font-medium sm:flex">
+        <li><a href="index.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 bg-white/10 hover:text-white">Home</a></li>
+        <li><a href="design.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 hover:bg-white/10 hover:text-white">Design Collections</a></li>
+        <li><a href="about.html" class="block cursor-pointer sm:rounded-normal px-4 py-[10px] text-white/70 hover:bg-white/10 hover:text-white">About Us</a></li>
+        <a href="#" class="block text-center md:rounded-normal bg-indigo-700 px-7 py-[10px] font-medium hover:bg-indigo-800 sm:hidden mt-6">Contact Us</a>
+      </ul>
+      <a href="#" class="hidden rounded-normal bg-indigo-700 px-7 py-[10px] font-medium hover:bg-indigo-800 sm:block">Contact Us</a>
+    </nav>
+      <!-- =================  Navbar end  ================= -->
+
+      <!-- ================================================ -->
+      <main class="hero w-full antialiased pb-10 h-auto">
+
+        <section id="design-img" class="container max-w-4xl mx-auto mt-20 px-6 ">
+            <div class="w-full h-[500px] border-[10px] md:border-[20px] border-white/10 rounded-[30px] overflow-hidden">
+                <iframe class="w-full h-full object-fill" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FIefSivXEATw2cv1R7u46jN%2FUPCODE%3Fnode-id%3D63%253A3103%26t%3DDWj8VFYJxtBC6YvH-1" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="design-description" class="container max-w-4xl mx-auto mt-20 px-6">
+          <h1 class="text-4xl font-bold leading-8 tracking-wide mb-7">Codeslices</h1>
+          <h3 class="text-2xl mb-5 font-medium text-white/80 leading-8 tracking-wide">Level : intermediate</h3>
+          <p class="text-white/60 mb-5">
+            Codeslices is the ultimate destination for developers looking to perfect their craft. Our platform offers a comprehensive and challenging environment for honing your slicing skills, turning design into code with precision and efficiency. Whether you're a beginner or an experienced developer, Codeslices provides the tools and resources you need to take your coding to the next level and unlock your full potential as a developer.
+          </p>
+
+          <button>
+                <a href="https://www.figma.com/file/IefSivXEATw2cv1R7u46jN?node-id=63:3103" class="flex px-6 py-3 bg-white/5 rounded-[3px] hover:bg-white/10">
+                  <img src="assets/svg/Download.svg" alt="Download icn" class="mr-3">
+                  Download
+                </a>
+          </button>
+        </section>
+      </main>
+
+      <footer id="footer" class="container mx-auto mt-10 max-w-5xl px-4 pb-8 text-center md:text-left border-t border-t-white/30">
+        <div class="flex justify-center flex-col md:flex-row mt-4 md:justify-between md:items-center">
+            <p class="text-sm sm:text-base md:text-md">&copy; 2023. Lifznotes All rights reserved.</p>
+            <div class="icons flex mx-auto md:mx-0 mt-4 mb-3 md:mt-0 gap-2">
+            <img src="assets/svg/twitter-icon.svg" alt="twitter icon" >
+            <img src="assets/svg/yt-icon.svg" alt="youtube icon" >
+            <img src="assets/svg/fb-icon.svg" alt="facebook icon" >
+            <img src="assets/svg/discord-icon.svg" alt="discord icon" >
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
