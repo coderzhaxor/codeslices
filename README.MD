@@ -12,6 +12,11 @@ Welcome to CodeSlices, a website dedicated to helping developers improve their c
 
 The website was created by Alif Januantara, a student of Sistem Informasi as a task for web design subject, as a way to help other developers learn and improve their skills. So why not give it a try and see what you can slice?
 
+### Tech Stack
+- HTML
+- Tailwindcss
+- Vanilla Javascript
+- AOS js
 
 ### How to Use CodeSlices 🤔
 
