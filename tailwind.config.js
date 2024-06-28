@@ -18,7 +18,7 @@ module.exports = {
       },
 
       background: {
-        hero: "url('../assets/svg/grid.svg') center no-repeat, url('../assets/img/gradient-green.png') left top no-repeat, url('../assets/img/gradient-red.png') bottom right no-repeat",
+        hero: "url('../assets/svg/grid.svg') center no-repeat, url('../assets/img/gradient-green.avif') left top no-repeat, url('../assets/img/gradient-red.avif') bottom right no-repeat",
       },
     },
   },
