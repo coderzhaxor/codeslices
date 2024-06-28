@@ -26,14 +26,14 @@
     left: 0;
     width: 100%;
     min-height: 100%;
-    background-image: url("../assets/svg/grid.svg"), url("../assets/img/gradient-green.png"), url("../assets/img/gradient-red.png");
+    background-image: url("../assets/svg/grid.svg"), url("../assets/img/gradient-green.avif"), url("../assets/img/gradient-red.avif");
     background-position: center, top left, center right;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   body {
-    background: url("../assets/img/gradient-red.png") no-repeat;
+    background: url("../assets/img/gradient-red.avif") no-repeat;
     background-position: bottom right;
     background-size: contain;
   }
